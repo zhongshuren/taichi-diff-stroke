@@ -32,7 +32,7 @@ class BrushStrokeRenderer(nn.Module):
                  noise_intensity=0.1,
                  feather=2.0):
         super(BrushStrokeRenderer, self).__init__()
-        ti.init(arch=ti.gpu, device_memory_GB=4)
+        ti.init(arch=ti.gpu, device_memory_GB=8)
 
         self.num_stroke = num_stroke
         self.num_cp = num_cp
